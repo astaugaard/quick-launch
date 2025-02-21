@@ -1,6 +1,6 @@
 use std::{
-    collections::HashMap, fs, os::unix::process::CommandExt, path::PathBuf,
-    process::Command, rc::Rc,
+    collections::HashMap, fs, os::unix::process::CommandExt, path::PathBuf, process::Command,
+    rc::Rc,
 };
 
 use clap::Parser;
@@ -131,7 +131,12 @@ fn make_application_grid(
     // window: &gtk4::ApplicationWindow,
     stack: Stack,
 ) -> Widget {
-    let grid = Grid::new();
+    let grid = Grid::builder()
+        .row_spacing(10)
+        .column_spacing(10)
+        .row_homogeneous(true)
+        .column_homogeneous(true)
+        .build();
 
     let key = EventControllerKey::new();
 
