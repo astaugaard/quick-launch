@@ -1,1 +1,13 @@
+stack {
+    background-color: #000;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid red;
+}
 
+box {
+    background-color: #666666;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid red;
+}
