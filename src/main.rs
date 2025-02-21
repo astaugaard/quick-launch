@@ -184,7 +184,7 @@ fn switch_to(launch: &VApp, stack: &Stack, width: usize) {
             stack.set_visible_child(&application_grid);
         }
         VApp::Application(command, _, _) => {
-            Command::new(command).exec();
+            Command::new("sh").arg("-c").arg(command).exec();
         }
     }
 }
