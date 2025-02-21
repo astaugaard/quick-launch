@@ -132,8 +132,8 @@ fn make_application_grid(
     stack: Stack,
 ) -> Widget {
     let grid = Grid::builder()
-        .row_spacing(10)
-        .column_spacing(10)
+        .row_spacing(5)
+        .column_spacing(5)
         .row_homogeneous(true)
         .column_homogeneous(true)
         .build();
