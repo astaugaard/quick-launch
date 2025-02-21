@@ -98,6 +98,8 @@ fn activate(application: &gtk4::Application, config: &VConfig) {
     let stack = Stack::builder()
         .valign(Align::Center)
         .halign(Align::Center)
+        .interpolate_size(true)
+        .vhomogeneous(false)
         .build();
 
     key.connect_key_pressed(move |_, key, _, _| {
