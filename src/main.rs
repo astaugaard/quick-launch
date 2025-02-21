@@ -38,7 +38,7 @@ enum App {
         applications: HashMap<String, App>,
     },
     Application {
-        command: PathBuf,
+        command: String,
         name: String,
         icon: String,
     },
@@ -54,7 +54,7 @@ struct Config {
 #[derive(Debug, Clone)]
 enum VApp {
     Folder(String, Rc<HashMap<Key, VApp>>),
-    Application(PathBuf, String, String),
+    Application(String, String, String),
 }
 
 struct VConfig {
@@ -184,6 +184,7 @@ fn switch_to(launch: &VApp, stack: &Stack, width: usize) {
             stack.set_visible_child(&application_grid);
         }
         VApp::Application(command, _, _) => {
+            println!("running command: {command}");
             Command::new("sh").arg("-c").arg(command).exec();
         }
     }
