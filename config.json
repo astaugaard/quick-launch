@@ -1,0 +1,80 @@
+{
+    "width": 4,
+    "height": 7,
+    "icon_size": 32,
+    "applications": {
+        "l": {
+            "name": "librewolf",
+            "command": "librewolf",
+            "icon": "librewolf"
+        },
+
+        "f": {
+            "name": "my files",
+            "application": "org.gnome.Nautilus"
+        },
+
+        "v": {
+            "application": "dev.vencord.Vesktop"
+        },
+
+        "g": {
+            "application": "net.lutris.Lutris"
+        },
+
+        "b": {
+            "application": "com.bitwarden.desktop"
+        },
+
+        "t": {
+            "application": "org.mozilla.Thunderbird"
+        },
+
+        "o": {
+            "application": "com.obsproject.Studio"
+        },
+
+        "p": {
+            "application": "org.prismlauncher.PrismLauncher"
+        },
+
+        "s": {
+            "application": "com.spotify.Client"
+        },
+
+        "d": {
+            "name": "Editors",
+            "applications": {
+                "b": {
+                    "application": "org.blender.Blender"
+                },
+                "i": {
+                    "application": "org.inkscape.Inkscape"
+                },
+                "t": {
+                     "application": "org.texstudio.TeXstudio"
+                },
+                "c": {
+                     "name": "Calc",
+                     "application": "org.libreoffice.LibreOffice.calc"
+                },
+                "d": {
+                    "name": "Draw",
+                    "application": "org.libreoffice.LibreOffice.draw"
+                },
+                "s": {
+                    "name": "Slides",
+                    "application": "org.libreoffice.LibreOffice.impress"
+                },
+                "m": {
+                    "name": "Math",
+                    "application": "org.libreoffice.LibreOffice.math"
+                },
+                "w": {
+                    "name": "Docs",
+                    "application": "org.libreoffice.LibreOffice.writer"
+                }
+            }
+        }
+    }
+}
