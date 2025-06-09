@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-anyhow = "1.0.95"
+anyhow = "1.0.98"
 clap = { version = "4.5.39", features = ["derive"] }
 gio = "0.20.11"
 gtk4 = { version = "0.9.6", features = ["v4_12"] }
