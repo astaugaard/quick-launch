@@ -16,6 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    
+    - name: Install system deps
+      run: sudo apt install -y cairo gtk4 atk glib gobject-introspection pango gdk-pixbuf graphene gtk4-layer-shell
+      
     - name: Build
       run: cargo build --verbose
     - name: Run tests
