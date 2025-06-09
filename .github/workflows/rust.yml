@@ -15,14 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install libgtk-4-dev libgtk-layer-shell-dev
     - uses: actions/checkout@v4
-
-    - name: Cache APT Packages
-  # You may pin to the exact commit or the version.
-  # uses: awalsh128/cache-apt-pkgs-action@7ca5f46d061ad9aa95863cd9b214dd48edef361d
-      uses: awalsh128/cache-apt-pkgs-action@v1.5.0
-      with:
-        packages: cairo gtk4 atk glib gobject-introspection pango gdk-pixbuf graphene gtk4-layer-shell      
     - name: Build
       run: cargo build --verbose
     - name: Run tests
