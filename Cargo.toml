@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0.95"
-clap = { version = "4.5.30", features = ["derive"] }
+clap = { version = "4.5.39", features = ["derive"] }
 gio = "0.20.9"
 gtk4 = { version = "0.9.6", features = ["v4_12"] }
 gtk4-layer-shell = "0.4.0"
