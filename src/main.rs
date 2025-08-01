@@ -129,7 +129,7 @@ fn activate(application: &gtk4::Application, config: &VConfig) {
 
     let win2 = window.clone();
 
-    click_gesture.connect_pressed(move |_, _, _, _| {
+    click_gesture.connect_released(move |_, _, _, _| {
         win2.close();
     });
 
@@ -150,7 +150,7 @@ fn activate(application: &gtk4::Application, config: &VConfig) {
                 println!("hello world");
                 Propagation::Stop
             }
-            _ => Propagation::Stop,
+            _ => Propagation::Proceed,
         }
     });
 
